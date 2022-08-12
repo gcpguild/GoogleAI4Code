@@ -67,10 +67,11 @@ We sum the number of swaps from your predicted cell order across the entire coll
 
 **Contact**
 
-Kyndryl GCP Guild Moderator: Ramamurthy V 
-GCP Contact: gcpguild@gmail.com
-Date: June 21, 2022.
-Revised : Aug 11, 2022
-Contributors: 122 key members from Google Cloud Search API.
+Kyndryl GCP Guild Moderator: Ramamurthy V <br>
+GCP Contact: gcpguild@gmail.com <br>
+Date: June 21, 2022. <br>
+Revised : Aug 11, 2022 <br>
+##Contributors: 
+122 key members from Google Cloud Search API.
 
 For SerpAPI Key request, please write an email request with an email subject of 'request for SerpApi Key'
