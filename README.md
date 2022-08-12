@@ -1,9 +1,9 @@
 # GoogleAI4Code
 GoogleAI4Code - ML based python notes
-Google AI for Code.py  
+Google AI for _Code.py_  
 Python : Parse for parase the JSON and predict
 _____________________________________________________________________________
-Project contact: Google AI for Code API, Nature Labs, Kyndryl
+Project contact: Google AI for Code API, Nature Labs, Kyndryl<br>
 [Email:](mailto:gcpguild@gmail.com)
 ## Project : Python API for Google AI for Code
 
@@ -40,19 +40,19 @@ cell_order - A space delimited list of the correct cell ordering given in terms 
 train_ancestors.csv - On Kaggle, a user may "fork" (that is, copy) the notebook of another user to create their own version. This file contains the forking history of notebooks in the training set. Note: There is no corresponding file for the test set.
 ancestor_id - Identifies sets of notebooks that have a common origin or "ancestor". As no notebook in the test set has an ancestor in the training set, you may find this field to be of use as a grouping factor when constructing validation splits.
 parent_id - Indicates that some version of the notebook id was forked from some version of the notebook parent_id. The notebook parent_id may or may not be present in the training data. (The parent may be missing because someone had forked a private notebook of their own, for instance.)
-Example Test Data
+**Example Test Data**
 To help you author submission code, we include a few example instances selected from the test set. When you submit your notebook for scoring, this example data will be replaced by the actual test data, including the sample_submission.csv file.
 
 test/ - A few example notebooks from the test set. The actual test set comprises about 20,000 notebooks in a format similar to the training set notebooks. No notebook in the test set has an ancestor in the training set.
 sample_submission.csv - A sample submission file in the correct format. See the Evaluation page for more details.
 
-Competition Metric - Kendall Tau Correlation
+## Competition Metric - Kendall Tau Correlation
 **Evaluation**
 We can compute the Kendall tau correlation between the predicted cell orders and the ground truth cell orders by counting how many swaps of adjacent cells are needed to sort the predicted order into the ground truth order.
 
-A pair  i,j  of indices is called an inversion within a numeric sequence  A  when  i<j  but  A[i]>A[j] . An inversion indicates that a pair of numbers in the sequence is out of order. The number of swaps needed to correctly sort the predictions turns out to be equivalent to the number of inversions in its ranking of the cells relative to the ground-truth ranking.
+A pair  i,j  of indices is called an inversion within a numeric sequence  A  when  i<j  but $ A[i]>A[j] $ . An inversion indicates that a pair of numbers in the sequence is out of order. The number of swaps needed to correctly sort the predictions turns out to be equivalent to the number of inversions in its ranking of the cells relative to the ground-truth ranking.
 
-The following cell shows an intuitive, but rather slow ( O(n2) ) way to count inversions in a list of ranks.
+The following cell shows an intuitive, but rather slow $( O(n2) )$ way to count inversions in a list of ranks.
 
 Predictions are evaluated by the Kendall tau correlation between predicted cell orders and ground truth cell orders accumulated across the entire collection of test set notebooks.
 
