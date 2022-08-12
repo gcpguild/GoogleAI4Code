@@ -4,8 +4,8 @@ Google AI for Code.py
 Python : Parse for parase the JSON and predict
 _____________________________________________________________________________
 Project contact: Google AI for Code API, Nature Labs, Kyndryl
-Email: gcpguild@gmail.com
-Project : Python API for Google AI for Code
+[Email:](mailto:gcpguild@gmail.com)
+## Project : Python API for Google AI for Code
 
 The goal of this application is to understand the relationship between code and comments in Python notebooks. You are challenged to reconstruct the order of markdown cells in a given notebook based on the order of the code cells, demonstrating comprehension of which natural language references which code.
 
