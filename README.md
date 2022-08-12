@@ -39,7 +39,7 @@ id - The notebook in file {id}.json.
 cell_order - A space delimited list of the correct cell ordering given in terms of the order in {id}.json.
 train_ancestors.csv - On Kaggle, a user may "fork" (that is, copy) the notebook of another user to create their own version. This file contains the forking history of notebooks in the training set. Note: There is no corresponding file for the test set.
 ancestor_id - Identifies sets of notebooks that have a common origin or "ancestor". As no notebook in the test set has an ancestor in the training set, you may find this field to be of use as a grouping factor when constructing validation splits.
-parent_id - Indicates that some version of the notebook id was forked from some version of the notebook parent_id. The notebook parent_id may or may not be present in the training data. (The parent may be missing because someone had forked a private notebook of their own, for instance.)
+parent_id - Indicates that some version of the notebook id was forked from some version of the notebook parent_id. The notebook parent_id may or may not be present in the training data. (The parent may be missing because someone had forked a private notebook of their own, for instance.)<b>
 **Example Test Data**
 To help you author submission code, we include a few example instances selected from the test set. When you submit your notebook for scoring, this example data will be replaced by the actual test data, including the sample_submission.csv file.
 
@@ -47,6 +47,7 @@ test/ - A few example notebooks from the test set. The actual test set comprises
 sample_submission.csv - A sample submission file in the correct format. See the Evaluation page for more details.
 
 ## Competition Metric - Kendall Tau Correlation
+  
 **Evaluation**
 We can compute the Kendall tau correlation between the predicted cell orders and the ground truth cell orders by counting how many swaps of adjacent cells are needed to sort the predicted order into the ground truth order.
 
@@ -65,7 +66,7 @@ We sum the number of swaps from your predicted cell order across the entire coll
 Kyndryl GCP Guild Moderator: Ramamurthy V 
 GCP Contact: gcpguild@gmail.com
 Date: June 21, 2022.
-Revised : July 8, 2022
+Revised : Aug 11, 2022
 Contributors: 122 key members from Google Cloud Search API.
 
 For SerpAPI Key request, please write an email request with an email subject of 'request for SerpApi Key'
