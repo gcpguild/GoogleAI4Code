@@ -3,7 +3,7 @@ GoogleAI4Code - ML based python notes
 Google AI for _Code.py_  
 Python : Parse for parase the JSON and predict
 _____________________________________________________________________________
-Project contact: Google AI for Code API, Nature Labs, Kyndryl<br>
+Project contact: Google ~~AI~~ for Code API, Nature Labs, Kyndryl<br>
 [Email:](mailto:gcpguild@gmail.com) gcpguild@gmail.com
 ## Project : Python API for Google AI for Code
 
@@ -13,7 +13,7 @@ The goal of this application is to understand the relationship between code and 
 
 Research teams across Google and Alphabet are exploring new ways that machine learning can assist software developers, and want to rally more members of the developer community to help explore this area too. Python notebooks provide a unique learning opportunity, because unlike a lot of standard source code, notebooks often follow narrative format, with comment cells implemented in markdown that explain a programmer's intentions for corresponding code cells. An understanding of the relationships between code and markdown could lend to fresh improvements across many aspects of AI-assisted development, such as the construction of better data filtering and preprocessing pipelines for model training, or automatic assessments of a notebook's readability.
 We have assembled a dataset of approximately 160,000 public Python notebooks from Kaggle and have teamed up with X, the moonshot factory to design a competition that challenges participants to use this dataset of published notebooks to build creative techniques aimed at better understanding the relationship between comment cells and code cells.
-This program is written in Python Language
+*This program is written in Python Language*
 
 Created for Lab purposes with regulations of Nature Labs
 
@@ -21,7 +21,8 @@ The dataset for this competition comprises about 160,000 Jupyter notebooks publi
 
 Your task is to predict the correct ordering of the cells in a given notebook whose markdown cells have been shuffled.
 
-The notebooks in this dataset have been selected and processed to ensure their suitability for the competition task. All notebooks:
+The notebooks in this dataset have been selected and processed to ensure their suitability for the competition task. 
+All notebooks:
 
 Have been published publicly on Kaggle under the Apache 2.0 open source license.
 Represent the most recently published version of the notebook.
@@ -33,9 +34,10 @@ This is a code competition, in which you will submit a model or code that will b
 The first-stage test set contains notebooks from an approximately 90-day historical window of time.
 The second-stage test set will contain a similar number of notebooks, collected from a future 90-day window of time. This is necessary to prevent models from looking up the order of existing public notebooks. The selection criteria for second-stage notebooks will be monitored for competition fairness purposes. For example, it will exclude competition participants' own notebooks.
 **Training Data**
-train/ - A folder comprising about 140,000 JSON files with the filenames corresponding to the id field in the csv files. Each file contains the code and markdown cells of a Kaggle notebook. The code cells are in their original (correct) order. The markdown cells have been shuffled and placed after the code cells.
-train_orders.csv - Gives the correct order of the cells for each notebook in the train/ folder.
-id - The notebook in file {id}.json.
+train/ - A folder comprising about 140,000 JSON files with the filenames corresponding to the id field in the csv files. Each file contains the code and markdown cells of a Kaggle notebook. The code cells are in their original (correct) order. 
+The markdown cells have been shuffled and placed after the code cells.
+1. train_orders.csv - Gives the correct order of the cells for each notebook in the train/ folder.
+2. id - The notebook in file {id}.json.
 cell_order - A space delimited list of the correct cell ordering given in terms of the order in {id}.json.
 train_ancestors.csv - On Kaggle, a user may "fork" (that is, copy) the notebook of another user to create their own version. This file contains the forking history of notebooks in the training set. Note: There is no corresponding file for the test set.
 ancestor_id - Identifies sets of notebooks that have a common origin or "ancestor". As no notebook in the test set has an ancestor in the training set, you may find this field to be of use as a grouping factor when constructing validation splits.
