@@ -45,8 +45,10 @@ parent_id - Indicates that some version of the notebook id was forked from some 
 **Example Test Data**
 To help you author submission code, we include a few example instances selected from the test set. When you submit your notebook for scoring, this example data will be replaced by the actual test data, including the sample_submission.csv file.
 
-test/ - A few example notebooks from the test set. The actual test set comprises about 20,000 notebooks in a format similar to the training set notebooks. No notebook in the test set has an ancestor in the training set.
-sample_submission.csv - A sample submission file in the correct format. See the Evaluation page for more details.
+- test/ - A few example notebooks from the test set. 
+- The actual test set comprises about 20,000 notebooks in a format similar to the training set notebooks. 
+- No notebook in the test set has an ancestor in the training set.
+*sample_submission.csv* - A sample submission file in the correct format. See the Evaluation page for more details.
 
 ## Competition Metric - Kendall Tau Correlation
   
