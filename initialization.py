@@ -19,7 +19,6 @@ cpu_dict_obj = { 'py-cpuinfo'   :   'cpuinfo' }
 import pkg_resources, re, os, sys, csv, json, socket, platform
 from pathlib import Path
 from itertools import filterfalse
-from serpapi import GoogleSearch
 
 from subprocess import check_output
 
